@@ -21,11 +21,11 @@ fn haversine(mut origin: Point, mut destination: Point) -> f64 {
 fn main() {
     let origin: Point = Point {
         lat: 36.12,
-        lon:-86.67
+        lon: -86.67,
     };
     let destination: Point = Point {
         lat: 33.94,
-        lon:-118.4
+        lon: -118.4,
     };
     let d: f64 = haversine(origin, destination);
     println!("Distance: {} km ({} mi)", d, d / 1.609344);
@@ -39,12 +39,13 @@ mod tests {
     fn it_works() {
         let origin: Point = Point {
             lat: 36.12,
-            lon:-86.67
+            lon: -86.67,
         };
         let destination: Point = Point {
             lat: 33.94,
-            lon:-118.4
+            lon: -118.4,
         };
+
         assert_eq!(haversine(origin, destination), 2887.2599506071106);
     }
 }
