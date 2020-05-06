@@ -28,7 +28,7 @@ fn main() {
         lon: -118.4,
     };
     let d: f64 = haversine(origin, destination);
-    println!("Distance: {} km ({} mi)", d, d / 1.609344);
+    println!("Distance: {} km ({} mi)", d, d / 1.609_344);
 }
 
 #[cfg(test)]
