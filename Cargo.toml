@@ -1,5 +1,5 @@
 [package]
-name = "haversine"
+name = "haversiner"
 version = "0.1.0"
 authors = ["andrewgy8 <andrewgy8@gmail.com>"]
 edition = "2018"
@@ -8,11 +8,11 @@ license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [lib]
-name = "haversine"
+name = "haversiner"
 path = "src/lib.rs"
 
 [[bin]]
-name = "haversinecalc"
+name = "haversinercalc"
 path = "src/main.rs"
 
 [dependencies]
