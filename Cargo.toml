@@ -3,6 +3,8 @@ name = "haversine"
 version = "0.1.0"
 authors = ["andrewgy8 <andrewgy8@gmail.com>"]
 edition = "2018"
+description = "Find the Haversine distance between any two points."
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [lib]
