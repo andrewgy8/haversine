@@ -5,5 +5,12 @@ authors = ["andrewgy8 <andrewgy8@gmail.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "haversine"
+path = "src/lib.rs"
+
+[[bin]]
+name = "haversinecalc"
+path = "src/main.rs"
 
 [dependencies]
