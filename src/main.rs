@@ -1,4 +1,4 @@
-use haversine::{Point, haversine};
+use haversine::{haversine, Point};
 
 fn main() {
     let origin: Point = Point {
