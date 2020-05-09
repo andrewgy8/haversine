@@ -35,4 +35,18 @@ mod tests {
 
         assert_eq!(haversine(origin, destination), 2887.2599506071106);
     }
+
+    #[test]
+    fn it_works_again() {
+        let origin: Point = Point {
+            lat: 39.472978,
+            lon: -0.375203,
+        };
+        let destination: Point = Point {
+            lat: 38.967161,
+            lon: -0.184759,
+        };
+
+        assert_eq!(haversine(origin, destination), 58.604658305034434);
+    }
 }
