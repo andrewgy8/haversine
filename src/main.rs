@@ -1,4 +1,4 @@
-use haversiner::{haversine, Point};
+use haversiner::{haversine, Measure, Point};
 
 fn main() {
     let origin: Point = Point {
@@ -9,6 +9,10 @@ fn main() {
         lat: 33.94,
         lon: -118.4,
     };
-    let d: f64 = haversine(origin, destination);
-    println!("Distance: {} km ({} mi)", d, d / 1.609_344);
+    let measure: Measure = haversine(origin, destination);
+    println!(
+        "Distance: {} km ({} mi)",
+        measure.distance,
+        measure.distance / 1.609_344
+    );
 }
