@@ -2,7 +2,7 @@ use std::f64;
 
 static R: f64 = 6372.8;
 
-#[derive(Copy, Clone)]
+#[derive(Copy, Clone, Debug)]
 pub struct Point {
     pub lat: f64,
     pub lon: f64,
