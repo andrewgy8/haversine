@@ -96,6 +96,9 @@ mod tests {
         });
 
         let matrix = one_to_many(origin, destinations);
-        assert_eq!(matrix.distances, [0.0, 58.604658305034434, 9665.831848220572]);
+        assert_eq!(
+            matrix.distances,
+            [0.0, 58.604658305034434, 9665.831848220572]
+        );
     }
 }
