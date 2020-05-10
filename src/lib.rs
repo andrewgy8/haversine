@@ -63,11 +63,10 @@ fn one_to_many_with_origin(origin: Point, destinations: Vec<Point>) -> Matrix {
 
 pub fn many_to_many(destinations: Vec<Point>) -> Matrix {
     let mut matrix: Matrix = Matrix::default();
-    let copy_dest = destinations.iter();
-    for origin in copy_dest {
+    destinations.iter().for_each(|origin| {
         let sub_matrix = one_to_many_with_origin(*origin, destinations.clone());
         matrix.add_distances(sub_matrix.distances);
-    }
+    });
     matrix
 }
 
